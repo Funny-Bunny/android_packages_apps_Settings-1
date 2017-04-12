@@ -54,9 +54,6 @@
     <string name="magisk_title">Magisk manager</string>
     <string name="magisk_summary">Control modules and settings</string>
 
-    <!-- KernelAdiutor Mod header name -->
-    <string name="performance_settings_title">Performance Settings</string>
-
     <!-- Main list strings -->
     <string name="pd_category_title">Custom</string>
     <string name="pd_title">Pixel Dust Settings</string>

@@ -234,8 +234,6 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
 
-    private static final String KA_FRAGMENT = "com.android.settings.PerformanceSettings";
-
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -249,8 +247,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.DataUsageSummaryActivity.class.getName(),
             Settings.SimSettingsActivity.class.getName(),
             Settings.WirelessSettingsActivity.class.getName(),
-            //custom_section
-            Settings.PerformanceSettingsActivity.class.getName(),
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
@@ -1046,14 +1042,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             Intent substratumIntent = new Intent();
             substratumIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
             startActivity(substratumIntent);
-            finish();
-            return null;
-        }
-
-        if (KA_FRAGMENT.equals(fragmentName)) {
-            Intent modKAIntent = new Intent();
-            modKAIntent.setClassName("com.kerneladiutor.mod", "com.grarak.kerneladiutor.MainActivity");
-            startActivity(modKAIntent);
             finish();
             return null;
         }
